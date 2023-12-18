@@ -35,19 +35,19 @@
 <div class="the-bass">
   <div class="rela-block drop-down-container hover__btn nodeHover">
     <div class="drop-down-item">
-      <div class="dropdowndiv"><a href="#" class="dropdowndiv-link hover__btn nodeHover">首页</a></div>
+      <div class="dropdowndiv"><div class="dropdowndiv hover__btn nodeHover"><div class="sidebar"  onclick="redirect('index.html')"><p>首页</p></div></div></div>
     </div>
   </div>
   <div class="rela-block drop-down-container hover__btn nodeHover">
     <div class="drop-down-item">
-      <div class="dropdowndiv hover__btn nodeHover">关于</div>
+      <div class="dropdowndiv hover__btn nodeHover"><div class="sidebar" onclick="redirect('about.html')"><p>关于</p></div></div>
     </div>
   </div>
   <div class="rela-block drop-down-container hover__btn nodeHover">
-    <div class="drop-down-item">新闻</div>
+    <div class="drop-down-item"><div class="dropdowndiv hover__btn nodeHover"><div class="sidebar" onclick="redirect('news.html')"><p>新闻</p></div></div></div>
   </div>
   <div class="rela-block drop-down-container hover__btn nodeHover">
-    <div class="drop-down-item">联系我们</div>
+    <div class="drop-down-item"><div class="dropdowndiv hover__btn nodeHover"><div class="sidebar" onclick="redirect('contact.html')"><p>联系我们</p></div></div></div>
   </div>
   <!--
     <div class="rela-block drop-down-container">
@@ -66,28 +66,28 @@
       <div class="content">
         <h2 class="title"></h2>
         <p class="description"> </p>
-        <button onclick="redirectToAboutPage()">了解更多</button>
+        <button onclick="redirect()">了解更多</button>
       </div>
     </li>
     <li class="item" style="background-image: url('./Assets/images/unknownbuilding3.jpg')">
       <div class="content">
         <h2 class="title">贤达经济人文学院</h2>
         <p class="description">学院位于上海外国语大学崇明校区，环境幽雅，人文气息浓厚，交通便捷，建有现代化水准的教学楼、综合楼、行政办公楼和学生公寓楼。 </p>
-        <button onclick="redirectToAboutPage()">了解更多</button>
+        <button onclick="redirect()">了解更多</button>
       </div>
     </li>
     <li class="item" style="background-image: url('Assets/images/unknownbuiding4.jpg')">
       <div class="content">
         <h2 class="title"></h2>
         <p class="description"> </p>
-        <button onclick="redirectToAboutPage()">了解更多</button>
+        <button onclick="redirect()">了解更多</button>
       </div>
     </li>
     <li class="item" style="background-image: url('Assets/images/unknownbuilding1.jpg')">
       <div class="content">
         <h2 class="title"></h2>
         <p class="description"> </p>
-        <button onclick="redirectToAboutPage()">了解更多</button>
+        <button onclick="redirect()">了解更多</button>
       </div>
     </li>
     <li class="item" style="background-image: url('./Assets/images/lighter.jpg')">
@@ -126,8 +126,8 @@
 	<!--<script src="https://unpkg.com/nodecursor@1.1.0/dist/nodecursor.min.js"></script> -->
 
 <script>
-        function redirectToAboutPage() {
-            window.location.href = "./about.html";
+        function redirect(url) { //about.html
+            window.location.href = `./${url}`;
         }
     </script>
 <script>

@@ -52,32 +52,30 @@
 	</div>
 	<div class="the-bass">
 		<div class="rela-block drop-down-container hover__btn nodeHover">
-			<div class="drop-down-item">
-				<div class="dropdowndiv">
-					<a href="#" class="dropdowndiv-link hover__btn nodeHover">首页</a>
-				</div>
-			</div>
+		  <div class="drop-down-item">
+			<div class="dropdowndiv"><div class="dropdowndiv hover__btn nodeHover"><div class="sidebar"  onclick="redirect('index.html')"><p>首页</p></div></div></div>
+		  </div>
 		</div>
 		<div class="rela-block drop-down-container hover__btn nodeHover">
-			<div class="drop-down-item">
-				<div class="dropdowndiv hover__btn nodeHover">关于</div>
-			</div>
+		  <div class="drop-down-item">
+			<div class="dropdowndiv hover__btn nodeHover"><div class="sidebar" onclick="redirect('about.html')"><p>关于</p></div></div>
+		  </div>
 		</div>
 		<div class="rela-block drop-down-container hover__btn nodeHover">
-			<div class="drop-down-item">新闻</div>
+		  <div class="drop-down-item"><div class="dropdowndiv hover__btn nodeHover"><div class="sidebar" onclick="redirect('news.html')"><p>新闻</p></div></div></div>
 		</div>
 		<div class="rela-block drop-down-container hover__btn nodeHover">
-			<div class="drop-down-item">联系我们</div>
+		  <div class="drop-down-item"><div class="dropdowndiv hover__btn nodeHover"><div class="sidebar" onclick="redirect('contact.html')"><p>联系我们</p></div></div></div>
 		</div>
 		<!--
-    <div class="rela-block drop-down-container">
-      <div class="drop-down-item"></div>
-    </div>
-    <div class="rela-block drop-down-container">
-      <div class="drop-down-item"></div>
-    </div>
-		-->
-	</div>
+		  <div class="rela-block drop-down-container">
+			<div class="drop-down-item"></div>
+		  </div>
+		  <div class="rela-block drop-down-container">
+			<div class="drop-down-item"></div>
+		  </div>
+			  --> 
+	  </div>
 	<div class="glass-container">
 		<div class="glass-content">
 			<div></div>
@@ -156,6 +154,11 @@
 		src="https://cdn.jsdelivr.net/gh/hmongouachon/NodeCursor/src/nodecursor-tween.js"></script>
 	<script
 		src="https://cdn.jsdelivr.net/npm/tweakpane@3.0.8/dist/tweakpane.min.js"></script>
+		<script>
+			function redirect(url) { //about.html
+				window.location.href = `./${url}`;
+			}
+		</script>
 	<script>
         document.addEventListener('DOMContentLoaded', function() {
             const slider = document.querySelector('.slider');
