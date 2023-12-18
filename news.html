@@ -1,0 +1,306 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>校园热点</title>
+<link rel="stylesheet" href="./style.css">
+<link rel="shortcut icon" href="./Assets/icon/icon1.png"
+	type="image/png">
+</head>
+
+<body style="overflow: scroll;">
+	<div class="node" id="node"></div>
+	<div class="cursor" id="cursor"></div>
+	<canvas></canvas>
+	<!--Loading SVG-->
+	<div id="overlay"></div>
+	<div id="loading-container">
+		<div id="loading-rotater">
+			<svg id="loading-svg" width="50" height="50" fill="transparent">
+      <circle cx="25" cy="25" r="24" stroke="black"></circle>
+    </svg>
+		</div>
+		<p id="loading-text">
+			loading<span class="loading-dot">.</span><span class="loading-dot">.</span><span
+				class="loading-dot">.</span>
+		</p>
+	</div>
+	<div class="fixed-nav-bar">
+		<img src="Assets/icon/icon_transparent.png"
+			style="height: 100px; width: auto;" alt="Logo Image">
+		<div class="logo hover__btn nodeHover">
+			<span style="margin-left: 60px;">My</span><a style="color: white"
+				class="hover__btn nodeHover">XDSISU</a>
+		</div>
+		<div class="discription">
+			<img src="Assets/images/logo.png" alt="">
+		</div>
+		<div class="navigation">
+			<a href="index.html" class="hover__btn nodeHover">首页</a> <a
+				href="about.html" class="hover__btn nodeHover">关于</a> <a
+				href="news.html" class="hover__btn nodeHover">校园热点</a> <a
+				href="contact.html" class="hover__btn nodeHover">联系我们</a>
+		</div>
+		<input type="checkbox" id="menuButton" /> <label for="menuButton"
+			class="menu-button-label hover__btn nodeHover">
+			<div class="white-bar"></div>
+			<div class="white-bar"></div>
+			<div class="white-bar"></div>
+			<div class="white-bar"></div>
+		</label>
+	</div>
+	<div class="the-bass">
+		<div class="rela-block drop-down-container hover__btn nodeHover">
+			<div class="drop-down-item">
+				<div class="dropdowndiv">
+					<a href="#" class="dropdowndiv-link hover__btn nodeHover">首页</a>
+				</div>
+			</div>
+		</div>
+		<div class="rela-block drop-down-container hover__btn nodeHover">
+			<div class="drop-down-item">
+				<div class="dropdowndiv hover__btn nodeHover">关于</div>
+			</div>
+		</div>
+		<div class="rela-block drop-down-container hover__btn nodeHover">
+			<div class="drop-down-item">新闻</div>
+		</div>
+		<div class="rela-block drop-down-container hover__btn nodeHover">
+			<div class="drop-down-item">联系我们</div>
+		</div>
+		<!--
+    <div class="rela-block drop-down-container">
+      <div class="drop-down-item"></div>
+    </div>
+    <div class="rela-block drop-down-container">
+      <div class="drop-down-item"></div>
+    </div>
+		-->
+	</div>
+	<div class="glass-container">
+		<div class="glass-content">
+			<div></div>
+		</div>
+	</div>
+	<div class="card-container">
+		<div class="card1">
+			<div class="card1-img">
+				<img style=""
+					src="Assets/images/dc1e37c0-9a7a-4e18-bf9a-356e386dd0e1_d.png"
+					alt="">
+			</div>
+			<div class="card1-content">
+				<h2>学校组织召开本学期期末教学工作会议</h2>
+				</br>
+				<p>12月13日上午，学校在崇明校区组织召开本学期期末教学工作会议，郑方贤校长、梁中贤副校长、罗玲芳副校长及各学院（部、中心）院长（主任）、教秘；创新创业中心、督办、学服中心、评建办、信实中心、综保部、教务处等相关职能部处负责人出席会议。会议由梁副校长主持。</p>
+			</div>
+		</div>
+		<div class="card1">
+			<div class="card1-img">
+				<img style=""
+					src="Assets/images/f35ddd12-71a5-4204-99a0-26a4afb5917a.png" alt="">
+			</div>
+			<div class="card1-content">
+				<h2>关爱健康 工作无忧——我校工会举办中医健康咨询活动</h2>
+				</br>
+				<p>随着气候逐渐转凉，寒冬将近，为呵护教职员工的身体健康，我校工会特邀请上海华上健康管理中心的健康管理师至我校崇明、虹口两校区开展为期</p>
+			</div>
+		</div>
+		<div class="card1">
+			<div class="card1-img">
+				<img style=""
+					src="Assets/images/3e6bdfd1-6a7d-4722-8485-692a30ce5c3f.png" alt="">
+			</div>
+			<div class="card1-content">
+				<h2>“宪”在出发，与法同行 ——上外贤达开展宪法宣传周活动</h2>
+				</br>
+				<p>12月4日，我国迎来第十个国家宪法日和第六个宪法宣传周。我校以“大力弘扬宪法精神，建设社会主义法治文化”为主题，在此期间，开展了形式多样、内容丰富的“宪法宣传周”活动，向全校师生广泛宣传宪法的精神和实质，培养遵守宪法的良好风尚，进一步强化学校治理现代化建设。</p>
+			</div>
+		</div>
+		<div class="card1">
+			<div class="card1-img">
+				<img style=""
+					src="Assets/images/e1b52cda-afa1-4d30-a80b-4e6a9127735f.jpg" alt="">
+			</div>
+			<div class="card1-content">
+				<h2>数字化赋能助力生态旅游发展</h2>
+				</br>
+				<p>上海外国语大学贤达经济人文学院积极发挥区域高校在世界级生态岛建设中的引领示范作用，12月8日协同崇明区文化和旅游局主办了一场“数字文旅助力生态旅游发展研讨会即上海高校文化产业管理专业协作联盟第四届年会”智慧交流、思想碰撞的高端年度盛会，进一步加强崇明区域经济合作与交流，推动崇明数字文旅产业发展，为崇明旅游注入新的动力，促进崇明的经济转型和升级</p>
+			</div>
+		</div>
+		<div class="card1">
+			<div class="card1-img">
+				<img style=""
+					src="Assets/images/0e7fc362-18be-4a7e-8dd1-412b9eabafce.jpg" alt="">
+			</div>
+			<div class="card1-content">
+				<h2>我校举行党的创新理论研究中心（所）揭牌仪式暨课题开题研讨会</h2>
+				</br>
+				<p>12月7-8日，学校党的创新理论研究中心（所）揭牌仪式暨2023-2024年度课题开题研讨会在崇明校区举行。上海市民办高校党工委副书记江鸿波到会揭牌并讲话。上海市教科院德研院党支部书记、副院长宗爱东参加研讨会。校党委副书记、纪委书记王科主持揭牌仪式。校党委宣传部部长、马克思主义学院院长、党的创新理论研究中心（所）执行主任（所长）朱秋教授主持研讨会，并向与会人员介绍了研究中心（所）五年建设规划和2023-2024年度工作计划。党的创新理论研究中心（所）主任（所长）孙力教授作主旨报告，学校党委办公室副主任、党委组织部部长陈琅玛，科研处处长蒋希众，部分高校的马克思主义学院院长，有关期刊的主编、编辑，及专家学者到会祝贺并指导开题。马克思主义学院全体教师和党的创新理论研究中心（所）及相关课题负责人参加了揭牌仪式和课题开题研讨会。</p>
+			</div>
+		</div>
+	</div>
+	<script type="module"
+		src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+	<script nomodule
+		src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+	<!-- partial -->
+	<script src="./jquery.min.js"></script>
+	<script src="./script.js"></script>
+	<script src="./cursor.js"></script>
+	<script src="https://unpkg.com/nodecursor@1.1.0/dist/nodecursor.min.js"></script>
+	<script
+		src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.1/TweenMax.min.js"></script>
+	<script
+		src="https://cdn.jsdelivr.net/gh/hmongouachon/NodeCursor/src/nodecursor-tween.js"></script>
+	<script
+		src="https://cdn.jsdelivr.net/npm/tweakpane@3.0.8/dist/tweakpane.min.js"></script>
+	<script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const slider = document.querySelector('.slider');
+
+            function activate(e) {
+                const items = document.querySelectorAll('.item');
+                if (e.target.matches('.next')) {
+                    slider.append(items[0]);
+                } else if (e.target.matches('.prev')) {
+                    slider.prepend(items[items.length - 1]);
+                }
+            }
+
+            document.addEventListener('click', activate, false);
+
+            $(window).scroll(function () {
+                if ($(window).scrollTop() >= 100) {
+                    $('.fixed-nav-bar, .the-bass').addClass('scrolled');
+                } else {
+                    $('.fixed-nav-bar, .the-bass').removeClass('scrolled');
+                }
+            });
+
+            $('#menuButton').on('change', function () {
+                if ($('#menuButton').is(':checked')) {
+                    console.log('123');
+                    $('.the-bass').addClass('dropped');
+                } else {
+                    $('.the-bass').removeClass('dropped');
+                }
+            });
+        });
+    </script>
+	<script>
+    document.addEventListener('DOMContentLoaded', function () {
+      // Initialize the NodeCursor plugin
+      var initCursor = new NodeCursor({
+        cursor: true,
+        node: true,
+        cursor_velocity: 0,
+        node_velocity: 0.75,
+        native_cursor: 'none',
+        element_to_hover: '.nodeHover',
+        cursor_class_hover: 'disable',
+        node_class_hover: 'expand',
+        hide_mode: true,
+        hide_timing: 2000,
+      });
+    });
+  </script>
+
+	<!--Loading SVG-->
+	<script>
+let dots = document.getElementsByClassName('loading-dot');
+let loadingSvg = document.getElementById('loading-svg');
+let loadingText = document.getElementById('loading-text');
+let overlay = document.getElementById('overlay');
+
+function startLoad() {
+  // Show overlay, loading SVG, and text
+  overlay.style.display = "block";
+  loadingSvg.style.display = "block";
+  loadingText.style.display = "block";
+
+  // Show and hide dots with animation
+  Array.prototype.forEach.call(dots, function (el, index) {
+    dots[index].style.display = "none";
+    setTimeout(function () {
+      dots[index].style.display = "inline-block";
+    }, 1000 + (1000 * index));
+
+    setTimeout(function () {
+      dots[index].style.display = "none";
+    }, 1000 + (1000 * index)); // Adjusted to hide after 2 seconds
+  });
+
+  // Hide overlay, loading SVG, and text after 2 seconds
+  setTimeout(function () {
+    overlay.style.display = "none";
+    loadingSvg.style.display = "none";
+    loadingText.style.display = "none";
+  }, 1000);
+}
+
+startLoad();
+</script>
+	<script>
+	(function($) {
+  $.fn.timeline = function() {
+    var selectors = {
+      id: $(this),
+      item: $(this).find(".timeline-item"),
+      activeClass: "timeline-item--active",
+      img: ".timeline__img"
+    };
+    selectors.item.eq(0).addClass(selectors.activeClass);
+    selectors.id.css(
+      "background-image",
+      "url(" +
+        selectors.item
+          .first()
+          .find(selectors.img)
+          .attr("src") +
+        ")"
+    );
+    var itemLength = selectors.item.length;
+    $(window).scroll(function() {
+      var max, min;
+      var pos = $(this).scrollTop();
+      selectors.item.each(function(i) {
+        min = $(this).offset().top;
+        max = $(this).height() + $(this).offset().top;
+        var that = $(this);
+        if (i == itemLength - 2 && pos > min + $(this).height() / 2) {
+          selectors.item.removeClass(selectors.activeClass);
+          selectors.id.css(
+            "background-image",
+            "url(" +
+              selectors.item
+                .last()
+                .find(selectors.img)
+                .attr("src") +
+              ")"
+          );
+          selectors.item.last().addClass(selectors.activeClass);
+        } else if (pos <= max - 40 && pos >= min) {
+          selectors.id.css(
+            "background-image",
+            "url(" +
+              $(this)
+                .find(selectors.img)
+                .attr("src") +
+              ")"
+          );
+          selectors.item.removeClass(selectors.activeClass);
+          $(this).addClass(selectors.activeClass);
+        }
+      });
+    });
+  };
+})(jQuery);
+
+$("#timeline-1").timeline();
+	</script>
+
+</body>
+
+</html>

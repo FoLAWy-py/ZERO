@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>首页</title>
+<link rel="stylesheet" href="./style.css">
+<link rel="shortcut icon" href="./Assets/icon/icon1.png" type="image/png">
+</head>
+<body>
+<div class="node" id="node"></div>
+<div class="cursor" id="cursor"></div>
+<canvas></canvas>
+<!--Loading SVG-->
+<div id="overlay"></div>
+<div id="loading-container">
+  <div id="loading-rotater">
+    <svg id="loading-svg" width="50" height="50" fill="transparent">
+      <circle cx="25" cy="25" r="24" stroke="black"></circle>
+    </svg>
+  </div>
+  <p id="loading-text">loading<span class="loading-dot">.</span><span class="loading-dot">.</span><span class="loading-dot">.</span></p>
+</div>
+<div class="fixed-nav-bar"> <img src="Assets/icon/icon_transparent.png" style = "height: 100px;width: auto;" alt="Logo Image">
+  <div class="logo hover__btn nodeHover"><span style="margin-left: 60px;">My</span><a style="color: white" class = "hover__btn nodeHover">XDSISU</a></div>
+  <div class="discription"><img src="Assets/images/logo.png" alt=""></div>
+  <div class="navigation"> <a href="index.html" class="hover__btn nodeHover">首页</a> <a href="about.html" class="hover__btn nodeHover">关于</a> <a href="news.html" class="hover__btn nodeHover">校园热点</a> <a href="contact.html" class="hover__btn nodeHover">联系我们</a> </div>
+  <input type="checkbox" id="menuButton" />
+  <label for="menuButton" class="menu-button-label hover__btn nodeHover">
+  <div class="white-bar"></div>
+  <div class="white-bar"></div>
+  <div class="white-bar"></div>
+  <div class="white-bar"></div>
+  </label>
+</div>
+<div class="the-bass">
+  <div class="rela-block drop-down-container hover__btn nodeHover">
+    <div class="drop-down-item">
+      <div class="dropdowndiv"><a href="#" class="dropdowndiv-link hover__btn nodeHover">首页</a></div>
+    </div>
+  </div>
+  <div class="rela-block drop-down-container hover__btn nodeHover">
+    <div class="drop-down-item">
+      <div class="dropdowndiv hover__btn nodeHover">关于</div>
+    </div>
+  </div>
+  <div class="rela-block drop-down-container hover__btn nodeHover">
+    <div class="drop-down-item">新闻</div>
+  </div>
+  <div class="rela-block drop-down-container hover__btn nodeHover">
+    <div class="drop-down-item">联系我们</div>
+  </div>
+  <!--
+    <div class="rela-block drop-down-container">
+      <div class="drop-down-item"></div>
+    </div>
+    <div class="rela-block drop-down-container">
+      <div class="drop-down-item"></div>
+    </div>
+		--> 
+</div>
+
+<!-- partial:index.partial.html -->
+<main>
+  <ul class="slider">
+    <li class="item" style="background-image: url('./Assets/images/5ab5c9ea15ce36d3c24cf7943bf33a87e850b1cd.jpg')">
+      <div class="content">
+        <h2 class="title"></h2>
+        <p class="description"> </p>
+        <button onclick="redirectToAboutPage()">了解更多</button>
+      </div>
+    </li>
+    <li class="item" style="background-image: url('./Assets/images/unknownbuilding3.jpg')">
+      <div class="content">
+        <h2 class="title">贤达经济人文学院</h2>
+        <p class="description">学院位于上海外国语大学崇明校区，环境幽雅，人文气息浓厚，交通便捷，建有现代化水准的教学楼、综合楼、行政办公楼和学生公寓楼。 </p>
+        <button onclick="redirectToAboutPage()">了解更多</button>
+      </div>
+    </li>
+    <li class="item" style="background-image: url('Assets/images/unknownbuiding4.jpg')">
+      <div class="content">
+        <h2 class="title"></h2>
+        <p class="description"> </p>
+        <button onclick="redirectToAboutPage()">了解更多</button>
+      </div>
+    </li>
+    <li class="item" style="background-image: url('Assets/images/unknownbuilding1.jpg')">
+      <div class="content">
+        <h2 class="title"></h2>
+        <p class="description"> </p>
+        <button onclick="redirectToAboutPage()">了解更多</button>
+      </div>
+    </li>
+    <li class="item" style="background-image: url('./Assets/images/lighter.jpg')">
+      <div class="content">
+        <h2 class="title"></h2>
+        <p class="description"> 正如路灯点亮街道一样，学校犹如一盏明灯，将科学、文化的火炬传递给了一代又一代的学子。在这里，孩子们接受知识的洗礼，培养着勤奋好学的品质。学校是他们成长的摇篮，是他们培养梦想的土壤。
+路灯和学校，仿佛是情投意合的伴侣。它们同舟共济，为城市带来了温暖和光明。路灯照亮着学校的道路，让学子们更加安全和自信地前行;而学校则是路灯的庇护所，让路灯在夜晚中找到归宿。</p>
+        <button onclick="redirectToAboutPage()">了解更多</button>
+      </div>
+    </li>
+    <li class="item" style="background-image: url('Assets/images/3fd2415f-622c-4d7f-987f-b6d8cc8aa164.jpg')">
+      <div class="content">
+        <h2 class="title"></h2>
+        <p class="description"> </p>
+        <button onclick="redirectToAboutPage()">了解更多</button>
+      </div>
+    </li>
+  </ul>
+  <nav class="nav">
+    <ion-icon class="btn prev" name="arrow-back-outline"></ion-icon>
+    <ion-icon class="btn next" name="arrow-forward-outline"></ion-icon>
+  </nav>
+</main>
+
+<!--<script type="module" src="./ionicons.esm.js"></script>
+<script nomodule src="./ionicons.js"></script>--> 
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script> 
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script> 
+<!-- partial --> 
+<script src="./jquery.min.js"></script> 
+<script  src="./script.js"></script> 
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.1/TweenMax.min.js"></script> 
+<script src="https://cdn.jsdelivr.net/gh/hmongouachon/NodeCursor/src/nodecursor-tween.js"></script> 
+<script src="https://cdn.jsdelivr.net/npm/tweakpane@3.0.8/dist/tweakpane.min.js"></script> 
+	<!--<script src="https://unpkg.com/nodecursor@1.1.0/dist/nodecursor.min.js"></script> -->
+
+<script>
+        function redirectToAboutPage() {
+            window.location.href = "./about.html";
+        }
+    </script>
+<script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const slider = document.querySelector('.slider');
+
+            function activate(e) {
+                const items = document.querySelectorAll('.item');
+                if (e.target.matches('.next')) {
+                    slider.append(items[0]);
+                } else if (e.target.matches('.prev')) {
+                    slider.prepend(items[items.length - 1]);
+                }
+            }
+
+            document.addEventListener('click', activate, false);
+
+            $(window).scroll(function () {
+                if ($(window).scrollTop() >= 100) {
+                    $('.fixed-nav-bar, .the-bass').addClass('scrolled');
+                } else {
+                    $('.fixed-nav-bar, .the-bass').removeClass('scrolled');
+                }
+            });
+
+            $('#menuButton').on('change', function () {
+                if ($('#menuButton').is(':checked')) {
+                    console.log('123');
+                    $('.the-bass').addClass('dropped');
+                } else {
+                    $('.the-bass').removeClass('dropped');
+                }
+            });
+        });
+    </script> 
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+      // Initialize the NodeCursor plugin
+      var initCursor = new NodeCursor({
+        cursor: true,
+        node: true,
+        cursor_velocity: 0,
+        node_velocity: 0.75,
+        native_cursor: 'none',
+        element_to_hover: '.nodeHover',
+        cursor_class_hover: 'disable',
+        node_class_hover: 'expand',
+        hide_mode: true,
+        hide_timing: 2000,
+      });
+    });
+  </script> 
+<!--Loading SVG--> 
+<script>
+let dots = document.getElementsByClassName('loading-dot');
+let loadingSvg = document.getElementById('loading-svg');
+let loadingText = document.getElementById('loading-text');
+let overlay = document.getElementById('overlay');
+
+function startLoad() {
+  // Show overlay, loading SVG, and text
+  overlay.style.display = "block";
+  loadingSvg.style.display = "block";
+  loadingText.style.display = "block";
+
+  // Show and hide dots with animation
+  Array.prototype.forEach.call(dots, function (el, index) {
+    dots[index].style.display = "none";
+    setTimeout(function () {
+      dots[index].style.display = "inline-block";
+    }, 1000 + (1000 * index));
+
+    setTimeout(function () {
+      dots[index].style.display = "none";
+    }, 1000 + (1000 * index)); // Adjusted to hide after 2 seconds
+  });
+
+  // Hide overlay, loading SVG, and text after 2 seconds
+  setTimeout(function () {
+    overlay.style.display = "none";
+    loadingSvg.style.display = "none";
+    loadingText.style.display = "none";
+  }, 1000);
+}
+
+startLoad();
+</script>
+
+</body>
+</html>

@@ -1,0 +1,357 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>关于</title>
+<link rel="stylesheet" href="./style.css">
+<link rel="shortcut icon" href="./Assets/icon/icon1.png"
+	type="image/png">
+</head>
+
+<body style="overflow: scroll;">
+	<div class="node" id="node"></div>
+	<div class="cursor" id="cursor"></div>
+	<canvas></canvas>
+	<!--Loading SVG-->
+	<div id="overlay"></div>
+	<div id="loading-container">
+		<div id="loading-rotater">
+			<svg id="loading-svg" width="50" height="50" fill="transparent">
+      <circle cx="25" cy="25" r="24" stroke="black"></circle>
+    </svg>
+		</div>
+		<p id="loading-text">
+			loading<span class="loading-dot">.</span><span class="loading-dot">.</span><span
+				class="loading-dot">.</span>
+		</p>
+	</div>
+	<div class="fixed-nav-bar">
+		<img src="Assets/icon/icon_transparent.png"
+			style="height: 100px; width: auto;" alt="Logo Image">
+		<div class="logo hover__btn nodeHover">
+			<span style="margin-left: 60px;">My</span><a style="color: white"
+				class="hover__btn nodeHover">XDSISU</a>
+		</div>
+		<div class="discription">
+			<img src="Assets/images/logo.png" alt="">
+		</div>
+		<div class="navigation">
+			<a href="index.html" class="hover__btn nodeHover">首页</a> <a
+				href="about.html" class="hover__btn nodeHover">关于</a> <a
+				href="news.html" class="hover__btn nodeHover">校园热点</a> <a
+				href="contact.html" class="hover__btn nodeHover">联系我们</a>
+		</div>
+		<input type="checkbox" id="menuButton" /> <label for="menuButton"
+			class="menu-button-label hover__btn nodeHover">
+			<div class="white-bar"></div>
+			<div class="white-bar"></div>
+			<div class="white-bar"></div>
+			<div class="white-bar"></div>
+		</label>
+	</div>
+	<div class="the-bass">
+		<div class="rela-block drop-down-container hover__btn nodeHover">
+			<div class="drop-down-item">
+				<div class="dropdowndiv">
+					<a href="#" class="dropdowndiv-link hover__btn nodeHover">首页</a>
+				</div>
+			</div>
+		</div>
+		<div class="rela-block drop-down-container hover__btn nodeHover">
+			<div class="drop-down-item">
+				<div class="dropdowndiv hover__btn nodeHover">关于</div>
+			</div>
+		</div>
+		<div class="rela-block drop-down-container hover__btn nodeHover">
+			<div class="drop-down-item">新闻</div>
+		</div>
+		<div class="rela-block drop-down-container hover__btn nodeHover">
+			<div class="drop-down-item">联系我们</div>
+		</div>
+		<!--
+    <div class="rela-block drop-down-container">
+      <div class="drop-down-item"></div>
+    </div>
+    <div class="rela-block drop-down-container">
+      <div class="drop-down-item"></div>
+    </div>
+		-->
+	</div>
+	<div class="glass-container">
+		<div class="glass-content"></div>
+	</div>
+	<!--timeline-->
+	<div class="timeline-container" id="timeline-1">
+		<div class="timeline-header">
+			<h2 class="timeline-header__title">学校简介</h2>
+			<h3 class="timeline-header__subtitle">国家首批全日制本科独立学院</h3>
+		</div>
+		<div class="timeline">
+			<div class="timeline-item" data-text="ESTABLISH">
+				<div class="timeline__content">
+					<img class="timeline__img"
+						src="Assets/images/c95144e4-311f-4368-8d54-470828f237a3.jpg" />
+					<h2 class="timeline__content-title">2004</h2>
+					<p class="timeline__content-desc">上海外国语大学贤达经济人文学院系国家教育部2004年批准设立的上海首批全日制本科独立学院，2021年获得上海市学位办硕士学位授予单位提早培育项目。由上海外国语大学和上海贤达投资有限公司合作举办。学校现有虹口、崇明两个校区，虹口校区地处市区东北部，毗邻上海外国语大学；崇明校区地处崇明区陈家镇，新古典主义和托斯卡纳风格的优美建筑与特有的生态环境相得益彰。</p>
+				</div>
+			</div>
+			<div class="timeline-item" data-text="INTERNATIONAL STUDENT">
+				<div class="timeline__content">
+					<img class="timeline__img"
+						src="Assets/images/20d3e8c5-410c-473d-ab53-a048c70e2824.jpg" />
+					<h2 class="timeline__content-title">2005</h2>
+					<p class="timeline__content-desc">上外贤达SQA-AD3+1+1本硕留学项目自2005年办学以来，已培养出2000多名毕业生，其中多名学生取得雅思7.5分以上的优异成绩;多名学生获得英国、澳大利亚合作大学颁发的奖学金；部分学生已获得帝国理工大学、伦敦大学学院、爱丁堡大学、华威大学、杜伦大学、兰卡斯特大学、卡迪夫大学、巴斯大学、伯明翰大学、约克大学、加州大学伯克利分校、纽约大学、纽约州立大学、迈阿密大学、南加州大学、纽约理工大学、悉尼大学、墨尔本大学、纽卡斯尔大学的硕士学位，并被政府办事机构、使馆以及银行等世界500强企业录用。</p>
+				</div>
+			</div>
+			<div class="timeline-item" data-text="PROJECT">
+				<div class="timeline__content">
+					<img class="timeline__img" src="Assets/images/footerbg.jpg" />
+					<h2 class="timeline__content-title">2018</h2>
+					<p class="timeline__content-desc">学校积极开展教育教学改革。2018年起，学校实施“英才培养计划”，配备高层次教授队伍，为品学兼优、具备发展潜质的学生脱颖而出提供更优越的成长条件和更广阔的发展空间。</p>
+				</div>
+			</div>
+			<div class="timeline-item" data-text="STUDENT SERVICE">
+				<div class="timeline__content">
+					<img class="timeline__img" src="Assets/images/corner1.jpg" />
+					<h2 class="timeline__content-title">2020</h2>
+					<p class="timeline__content-desc">2020年起，学校设立学生管理服务中心，下设学生发展部与学生事务部，坚持落实“全人教育”理念，促进学生德智体美劳全面发展。</p>
+				</div>
+			</div>
+			<div class="timeline-item" data-text="HONOR">
+				<div class="timeline__content">
+					<img class="timeline__img" src="Assets/images/sofa.jpg" />
+					<h2 class="timeline__content-title">2021</h2>
+					<p class="timeline__content-desc">2021年获得上海市学位办硕士学位授予单位提早培育项目。由上海外国语大学和上海贤达投资有限公司合作举办。</p>
+				</div>
+			</div>
+			<div class="timeline-item" data-text="SINGAPORE STUDY CENTER">
+				<div class="timeline__content">
+					<img class="timeline__img" src="Assets/images/20231216212723.jpg" />
+					<h2 class="timeline__content-title">2023</h2>
+					<p class="timeline__content-desc">2023年5月，上海外国语大学贤达经济人文学院成立“上外贤达新加坡留学中心”。2023年6月，上海外国语大学贤达经济人文学院数据科学学院、数字文旅学院、语言学习中心正式成立。</p>
+					</br>
+					</br>
+					</br>
+					</br>
+					</br>
+					</br>
+					</br>
+					</br>
+					</br>
+					</br>
+					</br>
+				</div>
+			</div>
+			<!--
+    <div class="timeline-item" data-text="FATHER OF THE TURKS">
+      <div class="timeline__content"><img class="timeline__img" src="http://manisanokta.com/wp-content/uploads/2014/07/ataturk-20.jpg"/>
+        <h2 class="timeline__content-title">1919</h2>
+        <p class="timeline__content-desc">On May 19, 1919, Mustafa Kemal Pasha landed in the Black Sea port of Samsun to startthe War of Independence. In defiance of the Sultan's government, he rallied a liberationarmy in Anatolia and convened the Congress of Erzurum and Sivas which established thebasis for the new national effort under his leadership.</p>
+      </div>
+    </div>
+	 
+    <div class="timeline-item" data-text="FATHER OF THE TURKS">
+      <div class="timeline__content"><img class="timeline__img" src="http://www.volpeypir.com/upload/3732.jpg"/>
+        <h2 class="timeline__content-title">1920</h2>
+        <p class="timeline__content-desc">
+          On April 23, 1920, the GrandNational Assembly was inaugurated. Mustafa Kemal Pasha was elected to its Presidency.
+          Fighting on many fronts, he led his forces to victory against rebels and invadingarmies. Following the Turkish triumph at the two major battles at Inonu in Western Turkey,the Grand National Assembly conferred on Mustafa Kemal Pasha the title ofCommander-in-Chief with the rank of Marshal.
+        </p>
+      </div>
+    </div>
+    <div class="timeline-item" data-text="FATHER OF THE TURKS">
+      <div class="timeline__content"><img class="timeline__img" src="http://sanatkaravani.com/wp-content/uploads/2015/11/ataturk-4.jpg"/>
+        <h2 class="timeline__content-title">1922</h2>
+        <p class="timeline__content-desc">At the end of August 1922, the Turkish armieswon their ultimate victory. Within a few weeks, the Turkish mainland was completelyliberated, the armistice signed, and the rule of the Ottoman dynasty abolished</p>
+      </div>
+    </div>
+    <div class="timeline-item" data-text="FATHER OF THE TURKS">
+      <div class="timeline__content"><img class="timeline__img" src="https://turkcetarih.com/wp-content/uploads/2015/05/Atat%C3%BCrkveCumhuriyet.jpg"/>
+        <h2 class="timeline__content-title">1923</h2>
+        <p class="timeline__content-desc">In July 1923, the national government signed the Lausanne Treaty with Great Britain,France, Greece, Italy, and others. In mid-October, Ankara became the capital of the new Turkish State. On October 29, the Republic was proclaimed and Mustafa Kemal Pasha wasunanimously elected President of the Republic.</p>
+      </div>
+    </div>
+    <div class="timeline-item" data-text="FATHER OF THE TURKS">
+      <div class="timeline__content"><img class="timeline__img" src="https://pbs.twimg.com/media/Cw69H8pXUAEaSqa.jpg"/>
+        <h2 class="timeline__content-title">1934</h2>
+        <p class="timeline__content-desc">
+          The account of Atatürk's fifteen year Presidency is a saga of dramatic modernization.With indefatigable determination, he created a new political and legal system, abolished the Caliphate and made both government and education secular, gave equal rights to women,changed the alphabet and the attire, and advanced the arts and the sciences, agricultureand industry.
+          In 1934, when the surname law was adopted, the national parliament gave him the name <i><strong>"Atatürk" (Father of the Turks)</strong></i>
+        </p>
+      </div>
+    </div>
+    <div class="timeline-item" data-text="FATHER OF THE TURKS">
+      <div class="timeline__content"><img class="timeline__img" src="http://www.bik.gov.tr/wp-content/uploads/2016/11/20161110_2_20037273_15856882.jpg?fit=1024%2C863"/>
+        <h2 class="timeline__content-title">1938</h2>
+        <p class="timeline__content-desc">On November 10, 1938, following an illness of a few months, the national liberator and the Father of modern Turkey died. But his legacy to his people and to the world endures.</p>
+      </div>
+    </div>
+-->
+		</div>
+	</div>
+	<!--<script type="module" src="./ionicons.esm.js"></script>
+<script nomodule src="./ionicons.js"></script>-->
+	<script type="module"
+		src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+	<script nomodule
+		src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+	<!-- partial -->
+	<script src="./jquery.min.js"></script>
+	<script src="./script.js"></script>
+	<script src="./cursor.js"></script>
+	<script src="https://unpkg.com/nodecursor@1.1.0/dist/nodecursor.min.js"></script>
+	<script
+		src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.1/TweenMax.min.js"></script>
+	<script
+		src="https://cdn.jsdelivr.net/gh/hmongouachon/NodeCursor/src/nodecursor-tween.js"></script>
+	<script
+		src="https://cdn.jsdelivr.net/npm/tweakpane@3.0.8/dist/tweakpane.min.js"></script>
+	<script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const slider = document.querySelector('.slider');
+
+            function activate(e) {
+                const items = document.querySelectorAll('.item');
+                if (e.target.matches('.next')) {
+                    slider.append(items[0]);
+                } else if (e.target.matches('.prev')) {
+                    slider.prepend(items[items.length - 1]);
+                }
+            }
+
+            document.addEventListener('click', activate, false);
+
+            $(window).scroll(function () {
+                if ($(window).scrollTop() >= 100) {
+                    $('.fixed-nav-bar, .the-bass').addClass('scrolled');
+                } else {
+                    $('.fixed-nav-bar, .the-bass').removeClass('scrolled');
+                }
+            });
+
+            $('#menuButton').on('change', function () {
+                if ($('#menuButton').is(':checked')) {
+                    console.log('123');
+                    $('.the-bass').addClass('dropped');
+                } else {
+                    $('.the-bass').removeClass('dropped');
+                }
+            });
+        });
+    </script>
+	<script>
+    document.addEventListener('DOMContentLoaded', function () {
+      // Initialize the NodeCursor plugin
+      var initCursor = new NodeCursor({
+        cursor: true,
+        node: true,
+        cursor_velocity: 0,
+        node_velocity: 0.75,
+        native_cursor: 'none',
+        element_to_hover: '.nodeHover',
+        cursor_class_hover: 'disable',
+        node_class_hover: 'expand',
+        hide_mode: true,
+        hide_timing: 2000,
+      });
+    });
+  </script>
+
+	<!--Loading SVG-->
+	<script>
+let dots = document.getElementsByClassName('loading-dot');
+let loadingSvg = document.getElementById('loading-svg');
+let loadingText = document.getElementById('loading-text');
+let overlay = document.getElementById('overlay');
+
+function startLoad() {
+  // Show overlay, loading SVG, and text
+  overlay.style.display = "block";
+  loadingSvg.style.display = "block";
+  loadingText.style.display = "block";
+
+  // Show and hide dots with animation
+  Array.prototype.forEach.call(dots, function (el, index) {
+    dots[index].style.display = "none";
+    setTimeout(function () {
+      dots[index].style.display = "inline-block";
+    }, 1000 + (1000 * index));
+
+    setTimeout(function () {
+      dots[index].style.display = "none";
+    }, 1000 + (1000 * index)); // Adjusted to hide after 2 seconds
+  });
+
+  // Hide overlay, loading SVG, and text after 2 seconds
+  setTimeout(function () {
+    overlay.style.display = "none";
+    loadingSvg.style.display = "none";
+    loadingText.style.display = "none";
+  }, 1000);
+}
+
+startLoad();
+</script>
+	<script>
+	(function($) {
+  $.fn.timeline = function() {
+    var selectors = {
+      id: $(this),
+      item: $(this).find(".timeline-item"),
+      activeClass: "timeline-item--active",
+      img: ".timeline__img"
+    };
+    selectors.item.eq(0).addClass(selectors.activeClass);
+    selectors.id.css(
+      "background-image",
+      "url(" +
+        selectors.item
+          .first()
+          .find(selectors.img)
+          .attr("src") +
+        ")"
+    );
+    var itemLength = selectors.item.length;
+    $(window).scroll(function() {
+      var max, min;
+      var pos = $(this).scrollTop();
+      selectors.item.each(function(i) {
+        min = $(this).offset().top;
+        max = $(this).height() + $(this).offset().top;
+        var that = $(this);
+        if (i == itemLength - 2 && pos > min + $(this).height() / 2) {
+          selectors.item.removeClass(selectors.activeClass);
+          selectors.id.css(
+            "background-image",
+            "url(" +
+              selectors.item
+                .last()
+                .find(selectors.img)
+                .attr("src") +
+              ")"
+          );
+          selectors.item.last().addClass(selectors.activeClass);
+        } else if (pos <= max - 40 && pos >= min) {
+          selectors.id.css(
+            "background-image",
+            "url(" +
+              $(this)
+                .find(selectors.img)
+                .attr("src") +
+              ")"
+          );
+          selectors.item.removeClass(selectors.activeClass);
+          $(this).addClass(selectors.activeClass);
+        }
+      });
+    });
+  };
+})(jQuery);
+
+$("#timeline-1").timeline();
+	</script>
+
+</body>
+
+</html>
